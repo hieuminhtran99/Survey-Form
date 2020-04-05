@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Survey Page</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
+    <link rel="stylesheet" href="assets/css/PHP-Contact-Form-dark-1.css">
+    <link rel="stylesheet" href="assets/css/PHP-Contact-Form-dark.css">
+    <link rel="stylesheet" href="assets/css/Responsive-Form-1.css">
+    <link rel="stylesheet" href="assets/css/Responsive-Form.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/TD-BS4-Simple-Contact-Form-1.css">
+    <link rel="stylesheet" href="assets/css/TD-BS4-Simple-Contact-Form.css">
+</head>
+
+<body style="background-image: url(&quot;assets/img/star-sky.jpg&quot;);">
+    <main class="text-center" id="main">
+        <h1 class="text-center text-white" id="title" style="padding-top: 30px;">freeCodeCamp Survey Form<br></h1>
+        <p class="text-center text-white" id="description"><em>Thank you for taking the time to help us improve the platform</em><br></p>
+        <form class="form-inline border rounded align-items-center m-auto" id="survey-form" style="background-image: url(&quot;assets/img/star-sky.jpg&quot;);max-width: 700px;padding-left: 40px;padding-right: 40px;padding-bottom: 20px;"><label id="name-label" style="padding-top: 50px;padding-left: 40px;color: rgb(255,255,255);padding-bottom: 10px;font-size: 18px;">Name</label><input class="border rounded form-control" type="text" id="name" style="width: 680px;margin-left: 40px;margin-right: 40px;"
+                placeholder="Enter your name" autofocus="" autocomplete="on" inputmode="latin" required=""><label id="email-label" style="padding-top: 20px;padding-left: 40px;color: rgb(255,255,255);font-size: 18px;">Email</label><input class="border rounded form-control"
+                type="email" id="email" style="width: 680px;margin-left: 40px;margin-right: 40px;" placeholder="Enter your email" autofocus="" inputmode="email" autocomplete="on" required=""><label id="number-label" style="padding-top: 20px;padding-left: 40px;color: rgb(255,255,255);font-size: 18px;">Age (optional)</label>
+            <input class="border rounded form-control" type="number" id="number" style="width: 680px;margin-left: 40px;margin-right: 40px;" placeholder="Age" autofocus="" inputmode="numeric" autocomplete="off" required="" min="16" max="100">
+            <label id="number-label-1" style="padding-top: 20px;padding-left: 40px;color: rgb(255,255,255);font-size: 18px;">What is your favorite feature of freeCodeCamp?<br></label><select class="form-control" id="dropdown" style="width: 680px;margin-left: 40px;margin-right: 40px;"
+                name="favFeature" required=""><optgroup label="Select an option"><option value="12" selected="">Challenges</option><option value="13">Projects</option><option value="14">Community</option><option value="15">Open Sources</option></optgroup></select>
+            <label id="number-label-2" style="padding-top: 20px;padding-left: 40px;color: rgb(255,255,255);font-size: 18px;">Would you recommend freeCodeCamp to a friend?<br></label>
+            <div>
+                <fieldset style="width: 680px;padding-right: 40px;padding-left: 40px;">
+                    <div class="custom-control custom-radio"><input type="radio" id="customRadio1" class="custom-control-input" name="customRadio" checked="" value="definitely"><label class="d-md-flex justify-content-md-start custom-control-label" for="customRadio1" style="max-width: 120px;color: white;">Definitely</label></div>
+                    <div class="custom-control custom-radio"><input type="radio" id="customRadio2" class="custom-control-input" name="customRadio" value="Maybe"><label class="d-md-flex justify-content-md-start custom-control-label" for="customRadio2" style="width: 120px;color: white;">Maybe</label></div>
+                </fieldset>
+            </div><label id="number-label-3" style="padding-top: 20px;padding-left: 40px;color: rgb(255,255,255);font-size: 18px;">What would you like to see improved?<br></label>
+            <div>
+                <fieldset>
+                    <div class="text-white custom-control custom-checkbox" style="max-width: 680px;width: 680px;padding-left: 60px;"><input type="checkbox" id="customCheck1" class="custom-control-input" checked="" value="front-end-projects"><label class="d-md-flex justify-content-md-start custom-control-label" for="customCheck1">Front-end Projects<br></label></div>
+                    <div class="d-md-flex justify-content-md-start custom-control custom-checkbox" style="padding-left: 60px;"><input type="checkbox" id="customCheck2" class="custom-control-input" value="back-end-projects"><label class="text-white d-md-flex justify-content-md-start custom-control-label" for="customCheck2">Back-end Projects</label></div>
+                </fieldset>
+            </div><label id="number-label-4" style="padding-top: 20px;padding-left: 40px;color: rgb(255,255,255);font-size: 18px;">Any comments or suggestions?<br></label><textarea class="border rounded shadow-sm form-control d-md-flex justify-content-md-start"
+                style="min-width: 540px;margin-left: 40px;margin-right: 60px;" placeholder="Enter your comments here..." name="comment"></textarea><button class="btn btn-primary text-center" id="submit" type="submit" style="height: 40px;width: 680px;margin-left: 40px;margin-right: 40px;margin-top: 9px;">Submit</button></form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/smart-forms.min.js"></script>
+    <script src="assets/js/PHP-Contact-Form-dark-1.js"></script>
+    <script src="assets/js/PHP-Contact-Form-dark.js"></script>
+</body>
+
+</html>
